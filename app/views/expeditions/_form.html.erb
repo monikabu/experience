@@ -1,0 +1,41 @@
+<%= form_for(@expedition) do |f| %>
+  <% if @expedition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expedition.errors.count, "error") %> prohibited this expedition from being saved:</h2>
+
+      <ul>
+      <% @expedition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :starting_point %><br>
+    <%= f.text_field :starting_point %>
+  </div>
+  <div class="field">
+    <%= f.label :destination %><br>
+    <%= f.text_field :destination %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_datedatetime %><br>
+    <%= f.text_field :end_datedatetime %>
+  </div>
+  <div class="field">
+    <%= f.label :coment %><br>
+    <%= f.text_area :coment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

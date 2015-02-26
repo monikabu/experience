@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @expedition.title %>
+</p>
+
+<p>
+  <strong>Starting point:</strong>
+  <%= @expedition.starting_point %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @expedition.destination %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @expedition.start_date %>
+</p>
+
+<p>
+  <strong>End datedatetime:</strong>
+  <%= @expedition.end_datedatetime %>
+</p>
+
+<p>
+  <strong>Coment:</strong>
+  <%= @expedition.coment %>
+</p>
+
+<%= link_to 'Edit', edit_expedition_path(@expedition) %> |
+<%= link_to 'Back', expeditions_path %>
