@@ -1,9 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="expeditions-header">
+  <h1 class="inline">Expeditions</h1>
+  <%= link_to 'New Expedition', new_expedition_path, class: "btn btn-primary inline" %>
+</div>
 
-<h1>Listing Expeditions</h1>
-
-<table>
-  <thead>
+<table class="table">
+  <thead class="table-header">
     <tr>
       <th>Title</th>
       <th>Starting point</th>
@@ -33,5 +34,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Expedition', new_expedition_path %>
