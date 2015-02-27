@@ -8,3 +8,37 @@
   left: 10px;
   width: 200px;
 }
+
+.expeditions-group {
+  position: absolute;
+  top: 200px;
+}
+
+.single-expedition {
+  padding: 5px;
+  width: 20%;
+  height: 140px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.btn-new-expedition {
+  position: absolute;
+  left: 641%;
+  top: 60px;
+  box-shadow: 5px 5px 2px #BDBDBD;
+}
+
+.expeditions-title {
+  font-size: 36px;
+  position: absolute;
+  top: 40px;
+  left: 42px;
+}
+
+.single-expedition.body {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  box-shadow: 8px 8px 3px #BDBDBD;
+  border-radius: 5px;
+}

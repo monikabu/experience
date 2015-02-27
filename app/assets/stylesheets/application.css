@@ -47,6 +47,14 @@ thead {
   height: 30px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+#sortable {
+  width: 104.6%;
+}
+
  .container {
   padding-left: 30px;
   color: #616264;
