@@ -1,28 +1,20 @@
 class ExpeditionsController < ApplicationController
-  before_action :set_expedition, only: [:show, :edit, :update, :destroy]
+  before_action :expedition, only: [:show, :edit, :update, :destroy]
 
-  # GET /expeditions
-  # GET /expeditions.json
   def index
     @expeditions = Expedition.all
   end
 
-  # GET /expeditions/1
-  # GET /expeditions/1.json
   def show
   end
 
-  # GET /expeditions/new
-  def new
+ def new
     @expedition = Expedition.new
   end
 
-  # GET /expeditions/1/edit
   def edit
   end
 
-  # POST /expeditions
-  # POST /expeditions.json
   def create
     @expedition = Expedition.new(expedition_params)
 
@@ -37,8 +29,6 @@ class ExpeditionsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /expeditions/1
-  # PATCH/PUT /expeditions/1.json
   def update
     respond_to do |format|
       if @expedition.update(expedition_params)
@@ -51,8 +41,6 @@ class ExpeditionsController < ApplicationController
     end
   end
 
-  # DELETE /expeditions/1
-  # DELETE /expeditions/1.json
   def destroy
     @expedition.destroy
     respond_to do |format|
@@ -62,13 +50,12 @@ class ExpeditionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_expedition
-      @expedition = Expedition.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def expedition_params
-      params.require(:expedition).permit(:title, :starting_point, :destination, :start_date, :end_datedatetime, :coment)
-    end
+  def expedition
+    @expedition = Expedition.find(params[:id])
+  end
+
+  def expedition_params
+    params.require(:expedition).permit(:title, :starting_point, :destination, :start_date, :end_datedatetime, :coment)
+  end
 end
