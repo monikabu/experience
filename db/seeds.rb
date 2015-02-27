@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+def generate_expeditions!
+  puts "Generating expeditions..."
+  10.times do |n|
+    Expedition.create(title: "Expedition no #{n}")
+  end
+end
+
+generate_expeditions!
