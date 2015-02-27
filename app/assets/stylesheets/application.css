@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+ @import "common/sidebar";
+ @import "common/buttons";
+
+ body, html {
+  padding: 0px;
+  margin: 0px;
+  border: 0px none;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, ##F2F2F2, ##FFFFFF);
+  background-image: -moz-linear-gradient(top, ##F2F2F2, ##FFFFFF);
+  background-image: -ms-linear-gradient(top, ##F2F2F2, ##FFFFFF);
+  background-image: -o-linear-gradient(top, ##F2F2F2, ##FFFFFF);
+  background-image: linear-gradient(to bottom, ##F2F2F2, ##FFFFFF);
+ }
+
+a, a:visited {
+  color: #FAFAFA;
+  text-shadow: 1px 1px #E6E6E6;
+}
+
+div {
+  padding: 5px;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+thead {
+  height: 30px;
+}
+
+ .container {
+  padding-left: 30px;
+  color: #616264;
+ }
+
+  .navbar {
+   height: 90px;
+   width: 100%;
+   background-image: -webkit-linear-gradient(top, #5F5F61, #7D7E82);
+   background-image: -moz-linear-gradient(top, #5F5F61, #7D7E82);
+   background-image: -ms-linear-gradient(top, #5F5F61, #7D7E82);
+   background-image: -o-linear-gradient(top, #5F5F61, #7D7E82);
+   background-image: linear-gradient(to bottom, #5F5F61, #7D7E82);
+  }
+
+ .logo {
+   padding: 35px 0 0 20px;
+   font-size: 32px;
+   color: #7FB2B5;
+   font-weight: bold;
+   text-shadow: 1px 1px #C2E0D6;
+ }
+
+ .inline {
+  display: inline;
+ }
+
+ .table {
+  padding-top: 10px;
+ }
+
+ .table-header {
+  color: #FAFAFA;
+  background-image: -webkit-linear-gradient(top, #5F5F61, #7D7E82);
+  background-image: -moz-linear-gradient(top, #5F5F61, #7D7E82);
+  background-image: -ms-linear-gradient(top, #5F5F61, #7D7E82);
+  background-image: -o-linear-gradient(top, #5F5F61, #7D7E82);
+  background-image: linear-gradient(to bottom, #5F5F61, #7D7E82);
+ }

@@ -1,0 +1,22 @@
+.sidebar {
+  background-color: black;
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 85%;
+  background-image: -webkit-linear-gradient(top, #E6E6E6, #F2F2F2);
+  background-image: -moz-linear-gradient(top, #E6E6E6, #F2F2F2);
+  background-image: -ms-linear-gradient(top, #E6E6E6, #F2F2F2);
+  background-image: -o-linear-gradient(top, #E6E6E6, #F2F2F2);
+  background-image: linear-gradient(to bottom, #E6E6E6, #F2F2F2);
+}
+
+.sidebar-list-item {
+  font-size: 24px;
+  list-style-type: none;
+  padding: 12px;
+  color: #FAFAFA;
+  text-shadow: 1px 1px #C2E0D6;
+}
