@@ -14,9 +14,6 @@
  *= require jquery-ui
  *= require_self
  */
- @import "common/sidebar";
- @import "common/buttons";
-
  body, html {
   padding: 0px;
   margin: 0px;
@@ -52,6 +49,7 @@ ul {
 }
 
 #sortable {
+  background-image: image-url('peacock.png');
   width: 104.6%;
 }
 
@@ -60,22 +58,12 @@ ul {
   color: #616264;
  }
 
-  .navbar {
-   height: 90px;
-   width: 100%;
-   background-image: -webkit-linear-gradient(top, #5F5F61, #7D7E82);
-   background-image: -moz-linear-gradient(top, #5F5F61, #7D7E82);
-   background-image: -ms-linear-gradient(top, #5F5F61, #7D7E82);
-   background-image: -o-linear-gradient(top, #5F5F61, #7D7E82);
-   background-image: linear-gradient(to bottom, #5F5F61, #7D7E82);
-  }
-
  .logo {
    padding: 35px 0 0 20px;
    font-size: 32px;
-   color: #7FB2B5;
+   color: #B404AE;
    font-weight: bold;
-   text-shadow: 1px 1px #C2E0D6;
+   text-shadow: 1px 1px #5F04B4;
  }
 
  .inline {
