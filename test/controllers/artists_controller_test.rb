@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ExpeditionTest < ActiveSupport::TestCase
+class ArtistsControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

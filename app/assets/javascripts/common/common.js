@@ -3,7 +3,8 @@ $(function() {
       .accordion({
         header: "> div > h3",
         collapsible: true,
-        active: false
+        active: false,
+        icons: false
       })
       .sortable({
         axis: "y",
@@ -23,3 +24,17 @@ $(function() {
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
   });
+
+// $(function() {
+//   $("#delete-piece").click(function() {
+//     $.ajax({
+//       type: "POST",
+//       url: "/pieces/" + id,
+//       dataType: "json",
+//       data: {"_method":"delete"},
+//       complete: function(){
+//         alert("Deleted successfully");
+//       }
+//     })
+//   })
+// });

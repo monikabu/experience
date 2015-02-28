@@ -1,0 +1,11 @@
+<div class="pieces-group sortable">
+  <ul id="sortable">
+    <% @pieces.each do |piece| %>
+      <li class="single-piece body">
+        <!-- <a href="" id="#delete-piece" data-id="<%= piece.id %>">x</a> -->
+        <p class="single-piece-title"><%= piece.title.upcase %></p>
+        <p align="middle"><img src="<%= piece.url %>" class="single-piece-img"/></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
