@@ -24,17 +24,3 @@ $(function() {
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
   });
-
-// $(function() {
-//   $("#delete-piece").click(function() {
-//     $.ajax({
-//       type: "POST",
-//       url: "/pieces/" + id,
-//       dataType: "json",
-//       data: {"_method":"delete"},
-//       complete: function(){
-//         alert("Deleted successfully");
-//       }
-//     })
-//   })
-// });
